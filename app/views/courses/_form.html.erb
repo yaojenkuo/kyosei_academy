@@ -1,0 +1,6 @@
+<%= simple_form_for @course do |f| %>
+  <%= f.input :name_en, label: "英文課名" %>
+  <%= f.input :name_ch, label: "中文課名" %>
+  <%= f.input :description, label: "課程描述" %>
+  <%= f.button :submit %>
+<% end %>
