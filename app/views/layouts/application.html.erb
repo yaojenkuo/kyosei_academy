@@ -9,6 +9,24 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <%= link_to "Kyosei Academy", courses_path, class: "navbar-brand" %>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li></li>
+            <li>
+              <%= link_to "課程列表", courses_path %>
+            </li>
+            <li>
+              <%= link_to "講師列表", teachers_path %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="container">
       <%= yield %>
     </div>
