@@ -1,0 +1,25 @@
+<h1>系列課程詳細資訊</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>系列課程英文名稱</td>
+            <td>系列課程中文名稱</td>
+            <td>描述</td>
+            <td>處理</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><%= @track.name_en %></td>
+            <td><%= @track.name_ch %></td>
+            <td><%= @track.description %></td>
+            <td>
+                <%= link_to "編輯", edit_track_path(@track), class: "btn btn-default" %>
+                <%= link_to "刪除", track_path(@track), method: "delete", data: { confirm: "確認刪除此系列課程？" }, class: "btn btn-danger" %>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<%= link_to "回系列課程列表", tracks_path, class: "btn btn-default" %>

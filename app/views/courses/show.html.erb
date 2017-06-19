@@ -5,6 +5,7 @@
         <tr>
             <td>英文課名</td>
             <td>中文課名</td>
+            <td>課程時數</td>
             <td>課程描述</td>
             <td>處理</td>
         </tr>
@@ -13,6 +14,7 @@
         <tr>
             <td><%= @course.name_en %></td>
             <td><%= @course.name_ch %></td>
+            <td><%= @course.hours %></td>
             <td><%= @course.description %></td>
             <td>
                 <%= link_to "編輯", edit_course_path(@course), class: "btn btn-default" %>

@@ -1,0 +1,6 @@
+<%= simple_form_for @track do |f| %>
+  <%= f.input :name_en, label: "系列課程英文名稱" %>
+  <%= f.input :name_ch, label: "系列課程中文名稱" %>
+  <%= f.input :description, label: "描述" %>
+  <%= f.button :submit %>
+<% end %>
